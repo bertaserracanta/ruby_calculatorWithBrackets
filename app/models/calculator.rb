@@ -84,24 +84,24 @@ class Calculator
     end
     def self.simple_operation_calculate(operands, operator)
         case operator
-        when "log"
-            return Math::log10(operands.to_f)
-        when "ln"
-            return Math::log(operands.to_f, Math::E)
-        when "exp","e^"
-            return Math::exp(operands.to_f)
-        when "sin"
-            return Math::sin(operands.to_f)
-        when "cos"
-            return Math::cos(operands.to_f)
-        when "tan"
-            return Math::tan(operands.to_f)
-        when "sinh"
-            return Math::sinh(operands.to_f)
-        when "cosh"
-            return Math::cosh(operands.to_f)
-        when "tanh"
-            return Math::tanh(operands.to_f)
+            when "log"
+                return Math::log10(operands.to_f)
+            when "ln"
+                return Math::log(operands.to_f, Math::E)
+            when "exp","e^"
+                return Math::exp(operands.to_f)
+            when "sin"
+                return Math::sin(operands.to_f)
+            when "cos"
+                return Math::cos(operands.to_f)
+            when "tan"
+                return Math::tan(operands.to_f)
+            when "sinh"
+                return Math::sinh(operands.to_f)
+            when "cosh"
+                return Math::cosh(operands.to_f)
+            when "tanh"
+                return Math::tanh(operands.to_f)
         end
         return operands[0].to_f.send operator, operands[1].to_f
     end
